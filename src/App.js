@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GlobalStyle from "./GlobalStyle";
 import TestimonialsSlider from "./components/TestimonialsSlider";
 import imageTanya from "./assets/image-tanya.jpg";
 import imageJohn from "./assets/image-john.jpg";
@@ -6,7 +7,7 @@ import imageJohn from "./assets/image-john.jpg";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
 `;
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <AppContainer>
+      <GlobalStyle />
       <TestimonialsSlider testimonialData={testimonials[0]} />
     </AppContainer>
   );
