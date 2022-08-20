@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Slider from "./Slider";
+import Slider, { SliderBox } from "./Slider";
 
 export const AuthorImg = styled.img`
-  width: clamp(15rem, 40vw, 27rem);
+  width: clamp(20rem, 40vw, 27rem);
   box-shadow: var(--Grayish-Blue) 0px 25px 50px -12px;
 `;
 
@@ -12,6 +12,19 @@ export const ImgBox = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  ${SliderBox} {
+    position: absolute;
+    bottom: -1.45rem;
+    left: 3rem;
+
+    @media (max-width: 800px) {
+      left: auto;
+      right: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 `;
 
 export const AuthorTitle = styled.p`
@@ -34,15 +47,26 @@ export const AuthorBox = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 0.6rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+  }
 `;
 
 export const Testimonial = styled.p`
   color: var(--Dark-Blue);
-  font-size: clamp(1rem, 2.75vw, 1.6rem);
+  font-size: clamp(1.2rem, 2.75vw, 1.6rem);
   font-weight: 300;
   line-height: 2.3ch;
   max-width: 33ch;
   margin: 0;
+
+  @media (max-width: 800px) {
+    max-width: 40ch;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -53,6 +77,12 @@ export const TextBox = styled.div`
   gap: 1.85rem;
   transform: translateX(3.5rem);
   z-index: 2;
+
+  @media (max-width: 800px) {
+    align-items: center;
+    text-align: center;
+    transform: none;
+  }
 `;
 
 export const TestimonialsBox = styled.div`
@@ -61,6 +91,14 @@ export const TestimonialsBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 3.75rem 0 0;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    gap: 4rem;
+  }
 `;
 
 const TestimonialsSlider = ({

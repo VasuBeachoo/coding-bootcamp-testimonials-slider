@@ -13,9 +13,6 @@ export const SliderIcon = styled.img`
 `;
 
 export const SliderBox = styled.div`
-  position: absolute;
-  bottom: -1.45rem;
-  left: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
