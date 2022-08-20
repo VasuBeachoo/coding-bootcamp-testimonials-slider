@@ -3,7 +3,13 @@ import TestimonialsSlider from "./components/TestimonialsSlider";
 import imageTanya from "./assets/image-tanya.jpg";
 import imageJohn from "./assets/image-john.jpg";
 
-const AppContainer = styled.div``;
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+`;
 
 const App = () => {
   const testimonials = [

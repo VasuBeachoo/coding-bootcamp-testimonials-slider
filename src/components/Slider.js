@@ -4,7 +4,12 @@ import iconNext from "../assets/icon-next.svg";
 
 export const SliderIcon = styled.img``;
 
-export const SliderBox = styled.div``;
+export const SliderBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 const Slider = ({ className }) => {
   return (
