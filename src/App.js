@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import TestimonialsSlider from "./components/TestimonialsSlider";
@@ -30,10 +31,26 @@ const App = () => {
     },
   ];
 
+  const [index, setIndex] = useState(0);
+
+  function nextSlide() {
+    if (index === testimonials.length - 1) setIndex(0);
+    else setIndex(index + 1);
+  }
+
+  function prevSlide() {
+    if (index === 0) setIndex(testimonials.length - 1);
+    else setIndex(index - 1);
+  }
+
   return (
     <AppContainer>
       <GlobalStyle />
-      <TestimonialsSlider testimonialData={testimonials[0]} />
+      <TestimonialsSlider
+        testimonialData={testimonials[index]}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+      />
     </AppContainer>
   );
 };

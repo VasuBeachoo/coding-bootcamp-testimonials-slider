@@ -63,7 +63,12 @@ export const TestimonialsBox = styled.div`
   margin: 0 3.75rem 0 0;
 `;
 
-const TestimonialsSlider = ({ className, testimonialData }) => {
+const TestimonialsSlider = ({
+  className,
+  testimonialData,
+  nextSlide,
+  prevSlide,
+}) => {
   return (
     <TestimonialsBox className={className}>
       <TextBox>
@@ -78,7 +83,7 @@ const TestimonialsSlider = ({ className, testimonialData }) => {
           src={testimonialData.img.src}
           alt={testimonialData.img.alt}
         />
-        <Slider />
+        <Slider nextSlide={nextSlide} prevSlide={prevSlide} />
       </ImgBox>
     </TestimonialsBox>
   );

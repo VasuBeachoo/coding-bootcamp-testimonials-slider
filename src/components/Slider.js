@@ -3,8 +3,12 @@ import iconPrev from "../assets/icon-prev.svg";
 import iconNext from "../assets/icon-next.svg";
 
 export const SliderIcon = styled.img`
+  opacity: 0.5;
+  transition: 0.25s;
+
   &:hover {
     cursor: pointer;
+    opacity: 1;
   }
 `;
 
@@ -25,11 +29,11 @@ export const SliderBox = styled.div`
   padding: 0.9rem 1.05rem;
 `;
 
-const Slider = ({ className }) => {
+const Slider = ({ className, nextSlide, prevSlide }) => {
   return (
     <SliderBox className={className}>
-      <SliderIcon src={iconPrev} alt="left-arrow-icon" />
-      <SliderIcon src={iconNext} alt="right-arrow-icon" />
+      <SliderIcon src={iconPrev} alt="left-arrow-icon" onClick={prevSlide} />
+      <SliderIcon src={iconNext} alt="right-arrow-icon" onClick={nextSlide} />
     </SliderBox>
   );
 };
