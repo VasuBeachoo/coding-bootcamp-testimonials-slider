@@ -6,6 +6,7 @@ const GlobalStyle = styled.createGlobalStyle`
   :root {
     --Dark-Blue: hsl(240, 38%, 20%);
     --Grayish-Blue: hsl(240, 18%, 77%);
+    --White: hsl(0, 0%, 100%);
 
     --Font-Family: "Inter", sans-serif;
   }

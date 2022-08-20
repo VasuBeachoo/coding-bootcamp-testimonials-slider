@@ -7,6 +7,7 @@ export const AuthorImg = styled.img`
 `;
 
 export const ImgBox = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,6 +52,7 @@ export const TextBox = styled.div`
   align-items: flex-start;
   gap: 1.85rem;
   transform: translateX(3.5rem);
+  z-index: 2;
 `;
 
 export const TestimonialsBox = styled.div`
