@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import TestimonialsSlider from "./components/TestimonialsSlider";
@@ -54,6 +54,16 @@ const App = () => {
     if (index === 0) setIndex(testimonials.length - 1);
     else setIndex(index - 1);
   }
+
+  function handleKeyboard(e) {
+    if (e.keyCode === 39) nextSlide();
+    else if (e.keyCode === 37) prevSlide();
+  }
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyboard);
+    return () => window.removeEventListener("keydown", handleKeyboard);
+  });
 
   return (
     <AppContainer>
