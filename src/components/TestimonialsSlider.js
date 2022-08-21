@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Slider, { SliderBox } from "./Slider";
+import patternQuotes from "../assets/pattern-quotes.svg";
 
 export const AuthorImg = styled.img`
-  width: clamp(20rem, 40vw, 27rem);
+  width: clamp(19rem, 40vw, 27rem);
   box-shadow: var(--Grayish-Blue) 0px 25px 50px -12px;
 `;
 
@@ -76,6 +77,7 @@ export const TextBox = styled.div`
   align-items: flex-start;
   gap: 1.85rem;
   transform: translateX(3.5rem);
+  background: url(${patternQuotes}) no-repeat 20% top/17%;
   z-index: 2;
 
   @media (max-width: 800px) {
@@ -97,7 +99,7 @@ export const TestimonialsBox = styled.div`
     justify-content: center;
     align-items: center;
     margin: 3rem 2rem;
-    gap: 4rem;
+    gap: 5rem;
   }
 `;
 

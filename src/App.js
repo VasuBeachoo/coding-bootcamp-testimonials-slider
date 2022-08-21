@@ -4,6 +4,8 @@ import GlobalStyle from "./GlobalStyle";
 import TestimonialsSlider from "./components/TestimonialsSlider";
 import imageTanya from "./assets/image-tanya.jpg";
 import imageJohn from "./assets/image-john.jpg";
+import patternBg from "./assets/pattern-bg.svg";
+import patternCurve from "./assets/pattern-curve.svg";
 
 const AppContainer = styled.div`
   display: flex;
@@ -11,6 +13,16 @@ const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-image: url(${patternCurve}), url(${patternBg});
+  background-repeat: no-repeat;
+  background-position: left bottom, 95% 40%;
+  background-size: 50vw, 50vw;
+
+  @media (max-width: 800px) {
+    justify-content: flex-start;
+    background-position: left bottom, 50% 5%;
+    background-size: 60vw, 25rem;
+  }
 `;
 
 const App = () => {
