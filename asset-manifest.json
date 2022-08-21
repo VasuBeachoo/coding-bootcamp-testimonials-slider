@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/coding-bootcamp-testimonials-slider/static/js/main.3875aa70.js",
+    "main.js": "/coding-bootcamp-testimonials-slider/static/js/main.ea8587f8.js",
     "static/media/image-john.jpg": "/coding-bootcamp-testimonials-slider/static/media/image-john.5253a557aa7d00d8466f.jpg",
     "static/media/image-tanya.jpg": "/coding-bootcamp-testimonials-slider/static/media/image-tanya.f54c06576a4cdc261099.jpg",
     "static/media/pattern-bg.svg": "/coding-bootcamp-testimonials-slider/static/media/pattern-bg.7f46e67e7d84324800ef100ff8da5693.svg",
@@ -9,9 +9,9 @@
     "static/media/pattern-curve.svg": "/coding-bootcamp-testimonials-slider/static/media/pattern-curve.05698a95740cb41f8c3c2cedd8ab273a.svg",
     "static/media/icon-prev.svg": "/coding-bootcamp-testimonials-slider/static/media/icon-prev.f72bba8e1f8b7df258c2f5d918944b16.svg",
     "static/media/icon-next.svg": "/coding-bootcamp-testimonials-slider/static/media/icon-next.0aa189dbfa66ca43c7a2b7c1915624e0.svg",
-    "main.3875aa70.js.map": "/coding-bootcamp-testimonials-slider/static/js/main.3875aa70.js.map"
+    "main.ea8587f8.js.map": "/coding-bootcamp-testimonials-slider/static/js/main.ea8587f8.js.map"
   },
   "entrypoints": [
-    "static/js/main.3875aa70.js"
+    "static/js/main.ea8587f8.js"
   ]
 }
